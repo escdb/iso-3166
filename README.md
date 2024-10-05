@@ -10,7 +10,7 @@ This repository has several purposes:
 ## About the data
 The data is derived from [the Debian repository for ISO codes](https://salsa.debian.org/iso-codes-team/iso-codes), which in turn is based on several ISO standards including ISO 3166.
 
-To make it easy to udpate the repository with the "upstream" data (i.e. the Debian repository), any files in the `/data/` repository should not be modified by any user. For consistency **only** updates allowed to those files are when the Debian repository updates those files.
+To make it easy to udpate the repository with the "upstream" data (i.e. the Debian repository), any files in the `/data/` repository should not be modified by any user. For consistency, updates to those files are allowed **only** when the Debian repository updates those files.
 
 Instead, any necessary changes to the ISO 3166 standard in the scope of this project should be made in a separate `amendments` directory.
 This repository nevertheless strives to be as consistent with international standards as possible, and only deviates when this is necessary for any features (such as support for specific contests which can otherwise not be supported).
