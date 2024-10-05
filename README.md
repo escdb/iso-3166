@@ -17,7 +17,7 @@ This repository nevertheless strives to be as consistent with international stan
 
 
 ## Contributions
-Since the accuracy and consistency of the data in this repository is of utmost importance for the proper functioning of other aspects of the project, any Pull Requests will be thoroughly reviewed. It is recommended to textually discuss any proposed changes to the admendments (or new amendments) with the project owners before creating pull requests, as the chance of them being accepted otherwise is relatively low.\
+Since the accuracy and consistency of the data in this repository is of utmost importance for the proper functioning of other aspects of the project, any Pull Requests will be thoroughly reviewed. It is recommended to textually discuss any proposed changes to the admendments (or new amendments) with the project owners before creating pull requests, as the chance of them being accepted otherwise is relatively low.
 
 
 ## Licensing
