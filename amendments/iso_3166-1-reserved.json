@@ -1,0 +1,65 @@
+{
+  "3166-1": {
+    "AC": {
+      "alpha_2": "AC",
+      "flag": "🇦🇨",
+      "name": "Ascension Island",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "CP": {
+      "alpha_2": "CP",
+      "flag": "🇨🇵",
+      "name": "Clipperton Island",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "CQ": {
+      "alpha_2": "CQ",
+      "flag": "🇨🇶",
+      "name": "Sark",
+      "numeric": 680,
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it. See also: https://cldr.unicode.org/downloads/cldr-32"
+    },
+    "DG": {
+      "alpha_2": "DG",
+      "flag": "🇩🇬",
+      "name": "Diego Garcia",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "EA": {
+      "alpha_2": "EA",
+      "flag": "🇪🇦",
+      "name": "Ceuta and Meililla",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "IC": {
+      "alpha_2": "IC",
+      "flag": "🇮🇨",
+      "name": "Canary Islands",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "TA": {
+      "alpha_2": "TA",
+      "flag": "🇹🇦",
+      "name": "Tristan da Cunha",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "EU": {
+      "alpha_2": "EU",
+      "flag": "🇪🇺",
+      "name": "European Union",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "UN": {
+      "alpha_2": "UN",
+      "flag": "🇺🇳",
+      "name": "United Nations",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+    "XK": {
+      "alpha_2": "XK",
+      "flag": "🇽🇰",
+      "name": "Kosovo",
+      "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
+    },
+  }
+}

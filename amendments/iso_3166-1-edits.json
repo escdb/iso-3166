@@ -1,0 +1,27 @@
+{
+  "3166-1": {
+    "BA": {
+      "esc_name": "Bosnia & Herzegovina"
+    },
+    "GB": {
+      "alt_alpha_2": "UK",
+      "_comment": "Often used instead of GB to refer to the United Kingdom; code is also reserved by ISO."
+    },
+    "IE": {
+      "alt_alpha_3": "ROI",
+      "_comment": "Often used to refer to the Republic of Ireland."
+    },
+    "MK": {
+      "alt_alpha_2": "NM",
+      "alt_alpha_3": "NMK",
+      "aliases": ["F.Y.R. Macedonia", "Former Yugoslav Republic of Macedonia"],
+      "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha codes: often used in conjunction with North Macedonia."
+    },
+    "RU": {
+      "esc_name": "Russia"
+    },
+    "TR": {
+      "esc_name": "Turkey"
+    }
+  }
+}
