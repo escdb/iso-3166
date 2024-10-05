@@ -17,6 +17,10 @@
       "aliases": ["F.Y.R. Macedonia", "Former Yugoslav Republic of Macedonia"],
       "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha codes: often used in conjunction with North Macedonia."
     },
+    "NL": {
+      "aliases": ["The Netherlands"],
+      "_comment": "Alias: Previous name of the country at Eurovision participations."
+    },
     "RU": {
       "esc_name": "Russia"
     },

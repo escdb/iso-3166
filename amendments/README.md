@@ -23,9 +23,10 @@ Where `3166-x` is any of (`3166-1`, `3166-2`, or `3166-3`, i.e. the standard bei
 
 ## Additional defined rows
 ### ISO 3166-1
-- `esc_name`: The name under which the country took part in Eurovision. In case there are several names, the name of the most recent participation is used, if and only if this name not already the next precedence name (i.e. `common_name` if defined, else `name`).
+- `aliases`: An array of strings defining the previous names under which a country participated at Eurovision, if and only if these names are not already used as a `common_name`, `name`, or `official_name` in the official ISO files. In the future, aliases may get a more general purpose.
 - `alt_alpha_2`: An alternative alpha-2 code to refer to the country/region/territory. This is a "soft reservation"; the code shall not be used for anything but an alias for the respective territory.
 - `alt_alpha_3`: An alternative alpha-3 code to refer to the country/region/territory. This is a "soft reservation"; the code shall not be used for anything but an alias for the respective territory.
+- `esc_name`: The name under which the country took part in Eurovision. In case there are several names, the name of the most recent participation is used, if and only if this name not already the next precedence name (i.e. `common_name` if defined, else `name`).
 - `_comment`: A repository-specific remark on any amendments made to the official ISO list. This is purely meant as documentation and should not be used for any end applications.
 
 ### ISO 3166-2
