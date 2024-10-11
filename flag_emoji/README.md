@@ -1,6 +1,6 @@
 # Custom flag emoji
 
-## About this direcctory
+## About this directory
 Each subdirectory contains flag emoji of the given category.
 
 Besides the file you are currently reading, this directory also contains a `.json` file that should make it convenient to import the custom emoji images into your application. The file has the following structure:
