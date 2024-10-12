@@ -3,6 +3,9 @@
     "BA": {
       "esc_name": "Bosnia & Herzegovina"
     },
+    "CD": {
+      "common_name": "DR Congo"
+    },
     "GB": {
       "alt_alpha_2": "UK",
       "_comment": "Often used instead of GB to refer to the United Kingdom; code is also reserved by ISO."
