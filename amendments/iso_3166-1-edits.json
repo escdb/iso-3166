@@ -1,34 +1,230 @@
 {
   "3166-1": {
+    "AD": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "AL": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "AM": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "AT": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "AU": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "AZ": {
+      "in_esc": true,
+      "in_jesc": true
+    },
     "BA": {
-      "esc_name": "Bosnia & Herzegovina"
+      "esc_name": "Bosnia & Herzegovina",
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "BE": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "BG": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "BY": {
+      "in_esc": true,
+      "in_jesc": true
     },
     "CD": {
       "common_name": "DR Congo"
     },
+    "CH": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "CY": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "CZ": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "DE": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "DK": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "EE": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "ES": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "FI": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "FR": {
+      "in_esc": true,
+      "in_jesc": true
+    },
     "GB": {
       "alt_alpha_2": "UK",
-      "_comment": "Often used instead of GB to refer to the United Kingdom; code is also reserved by ISO."
+      "_comment": "Often used instead of GB to refer to the United Kingdom; code is also reserved by ISO.",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "GE": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "GR": {
+      "alt_alpha_2": "EL",
+      "_comment": "Recommended abbreviation by the European Union.",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "HR": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "HU": {
+      "in_esc": true,
+      "in_jesc": false
     },
     "IE": {
       "alt_alpha_3": "ROI",
-      "_comment": "Often used to refer to the Republic of Ireland."
+      "_comment": "Often used to refer to the Republic of Ireland.",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "IL": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "IS": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "IT": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "KZ": {
+      "in_esc": false,
+      "in_jesc": true
+    },
+    "LB": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "LT": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "LU": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "LV": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "MA": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "MC": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "MD": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "ME": {
+      "in_esc": true,
+      "in_jesc": true
     },
     "MK": {
       "alt_alpha_2": "NM",
       "alt_alpha_3": "NMK",
       "aliases": ["F.Y.R. Macedonia", "Former Yugoslav Republic of Macedonia"],
-      "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha codes: often used in conjunction with North Macedonia."
+      "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha codes: often used in conjunction with North Macedonia.",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "MT": {
+      "in_esc": true,
+      "in_jesc": true
     },
     "NL": {
       "aliases": ["The Netherlands"],
-      "_comment": "Alias: Previous name of the country at Eurovision participations."
+      "_comment": "Alias: Previous name of the country at Eurovision participations.",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "NO": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "PL": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "PT": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "RO": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "RS": {
+      "in_esc": true,
+      "in_jesc": true
     },
     "RU": {
-      "esc_name": "Russia"
+      "esc_name": "Russia",
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "SE": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "SI": {
+      "in_esc": true,
+      "in_jesc": true
+    },
+    "SK": {
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "SM": {
+      "in_esc": true,
+      "in_jesc": true
     },
     "TR": {
-      "esc_name": "Turkey"
+      "esc_name": "Turkey",
+      "in_esc": true,
+      "in_jesc": false
+    },
+    "UA": {
+      "in_esc": true,
+      "in_jesc": true
     }
   }
 }

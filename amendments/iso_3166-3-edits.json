@@ -1,10 +1,14 @@
 {
   "3166-3": {
     "CSXX": {
-      "esc_name": "Serbia & Montenegro"
+      "esc_name": "Serbia & Montenegro",
+      "in_esc": true,
+      "in_jesc": true
     },
     "YUCS": {
-      "esc_name": "Yugoslavia"
+      "esc_name": "Yugoslavia",
+      "in_esc": true,
+      "in_jesc": false
     }
   }
 }
