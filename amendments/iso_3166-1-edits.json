@@ -42,7 +42,8 @@
       "in_jesc": true
     },
     "CD": {
-      "common_name": "DR Congo"
+      "common_name": "DR Congo",
+      "_comment": "Abbreviated form often used to refer to the country."
     },
     "CH": {
       "in_esc": true,
