@@ -14,7 +14,7 @@
       "alpha_3": "XRW",
       "name": "Rest of the World",
       "_comment": "Used to represent Rest of the World votes in Eurovision, starting from 2023.",
-      "in_esc": false,
+      "in_esc": true,
       "in_jesc": false
     }
   }
