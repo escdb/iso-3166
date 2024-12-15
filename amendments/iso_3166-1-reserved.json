@@ -60,6 +60,6 @@
       "flag": "🇽🇰",
       "name": "Kosovo",
       "_comment": "Currently not in use. Reserved because this alpha-2 code is part of the CDLR, and Unicode has an emoji rendered to it."
-    },
+    }
   }
 }
