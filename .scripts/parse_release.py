@@ -115,7 +115,11 @@ if __name__ == "__main__":
     # CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
     # REPO_ROOT = os.path.join(CURRENT_DIR, "..")
 
+    print("Create IsoParser...")
     parser = IsoParser()
+    print("Parse files into ISO dict...")
     parsed_dict = parser.create_iso_dict(APPEND_AMENDMENTS)
+    print("Write ISO dict to file...")
     with open(OUTPUT_PATH, "w") as json_f:
         json.dump(parsed_dict, json_f, indent=2, sort_keys=True)
+    print(f"OK: Output file '{OUTPUT_PATH}' created.")
