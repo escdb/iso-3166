@@ -6,7 +6,7 @@ jobs:
   validate-json:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Validate JSON files
         uses: RaaLabs/validate-json@v1.0.1
         with:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: validate-json
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         # Most recent Python version as of 2024-12-29.
