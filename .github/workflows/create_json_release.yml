@@ -1,0 +1,42 @@
+name: Create Release on Merge
+on:
+  pull_request:
+    types: [closed]  # Triggered if PR closes (whether merged or not)
+
+jobs:
+  release:
+    # Only perform the action if PR is merged.
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Check for JSON file changes
+        id: check_changes
+        # Exit 1: signal a "failed" status so that the rest does not execute.
+        run: |
+          echo "Check if /data/ or /amendments/ have modified JSON files..."
+          git fetch origin main
+          changes=$(git diff --name-only origin/main...HEAD)
+          echo "Changed files: $changes"
+          if [[ ! "$changes" =~ (data/.*\.json|extra/.*\.json) ]]; then
+            echo "No relevant JSON changes found."
+            exit 1  # Exit if no relevant changes are found
+          fi
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        # Most recent Python version as of 2024-12-29.
+        with:
+          python-version: '3.13'
+      # Code does not have dependencies. Otherwise, would need a step here to `pip install` stuff.
+      - name: Execute merge parsing script.
+        run: python .scripts/parse_release.py
+      - name: Create release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.date }}-${{ env.COMMIT_SHORT_SHA }}
+          name: Release of ${{ env.date }}, as of commit ${{ github.sha }}
+          # TODO: Ensure that this file is made or somehow dumped by the script.
+          files: iso_3166_data.json
+          token: ${{ secrets.GITHUB_TOKEN }}
