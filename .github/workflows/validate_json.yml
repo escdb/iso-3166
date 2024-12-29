@@ -1,0 +1,13 @@
+name: Validate JSON marshalling
+on: 
+  pull_request:
+    branches: [main]
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON files
+        uses: RaaLabs/validate-json@v1.0.1
+        with:
+          directory: "."
