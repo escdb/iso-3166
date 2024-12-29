@@ -121,5 +121,6 @@ if __name__ == "__main__":
     parsed_dict = parser.create_iso_dict(APPEND_AMENDMENTS)
     print("Write ISO dict to file...")
     with open(OUTPUT_PATH, "w") as json_f:
-        json.dump(parsed_dict, json_f, indent=2, sort_keys=True)
+        # There are emoji in the .json file, so ensure_ascii should be False.
+        json.dump(parsed_dict, json_f, indent=2, sort_keys=True, ensure_ascii=False)
     print(f"OK: Output file '{OUTPUT_PATH}' created.")
