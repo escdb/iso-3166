@@ -18,10 +18,12 @@ This repository nevertheless strives to be as consistent with international stan
 
 Furthermore, the `flag_emoji` directory extends the set of flag emoji that is already assigned to territories in CLDR with custom-made, emoji-like images. These images are accompanied with a `.json` file that links the ISO 3166 code of the respective territory/subdivision to the image. This can be useful when wanting to render a flag alongside content concerning regions without Unicode supporting them.
 
+Finally, the `misc` file contains some helper files that do not necessarily contribute to the data set itself.
+
 
 ## Contributions
 Since the accuracy and consistency of the data in this repository is of utmost importance for the proper functioning of other aspects of the project, any Pull Requests will be thoroughly reviewed. It is recommended to textually discuss any proposed changes to the admendments (or new amendments) with the project owners before creating pull requests, as the chance of them being accepted otherwise is relatively low.
 
 
 ## Licensing
-To stay consistent with the Debian repository, this repository shares the same license (GNU LGPLv2.1).
+To stay consistent with the Debian repository, this repository shares the same license (GNU LGPLv2.1). Some specific files, notably emoji graphics, may use additional or different licenses.
