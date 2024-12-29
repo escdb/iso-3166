@@ -43,7 +43,7 @@
     },
     "CD": {
       "common_name": "DR Congo",
-      "_comment": "Abbreviated form often used to refer to the country."
+      "_comment": "Common name: Abbreviated form often used to refer to the country."
     },
     "CH": {
       "in_esc": true,
@@ -83,7 +83,7 @@
     },
     "GB": {
       "alt_alpha_2": "UK",
-      "_comment": "Often used instead of GB to refer to the United Kingdom; code is also reserved by ISO.",
+      "_comment": "Alt alpha 2: Often used to refer to the United Kingdom instead of GB; code is also reserved by ISO.",
       "in_esc": true,
       "in_jesc": true
     },
@@ -93,7 +93,7 @@
     },
     "GR": {
       "alt_alpha_2": "EL",
-      "_comment": "Recommended abbreviation by the European Union.",
+      "_comment": "Alt alpha 2: Recommended abbreviation by the European Union.",
       "in_esc": true,
       "in_jesc": true
     },
@@ -107,7 +107,7 @@
     },
     "IE": {
       "alt_alpha_3": "ROI",
-      "_comment": "Often used to refer to the Republic of Ireland.",
+      "_comment": "Alt alpha 3: Often used to refer to the Republic of Ireland.",
       "in_esc": true,
       "in_jesc": true
     },
@@ -163,7 +163,7 @@
       "alt_alpha_2": "NM",
       "alt_alpha_3": "NMK",
       "aliases": ["F.Y.R. Macedonia", "Former Yugoslav Republic of Macedonia"],
-      "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha codes: often used in conjunction with North Macedonia.",
+      "_comment": "Aliases: Previous names of the country at Eurovision participations. Alt alpha {2, 3}: often used in conjunction with North Macedonia.",
       "in_esc": true,
       "in_jesc": true
     },
@@ -173,7 +173,7 @@
     },
     "NL": {
       "aliases": ["The Netherlands"],
-      "_comment": "Alias: Previous name of the country at Eurovision participations.",
+      "_comment": "Aliases: Previous name of the country at Eurovision participations.",
       "in_esc": true,
       "in_jesc": true
     },
