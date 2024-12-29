@@ -5,5 +5,7 @@
 *       @fixedthink
 
 # Order is important. The last matching pattern has the most precedence.
+.github/**                                             @fixedthink
+.scripts/**                                            @fixedthink
 # *.json                                               @fixedthink
 # *.md                                                 @fixedthink
