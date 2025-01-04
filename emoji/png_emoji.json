@@ -70,7 +70,7 @@
     "US-WY": "./png/3166-2-US/flag_us_wy.png"
   },
   "3166-3": {
-    "CSXX": "./png/esc_bonus_flags/flag_cs.png",
-    "YUCS": "./png/esc_bonus_flags/flag_yu.png"
+    "CSXX": "./png/esc_bonus_flags/flag_csxx.png",
+    "YUCS": "./png/esc_bonus_flags/flag_yucs.png"
   }
 }
