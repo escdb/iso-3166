@@ -26,7 +26,7 @@ Each filetype has the following subdirectories:
 
 To use the files in code, the files are accompanied by a `.json` file that link the ISO 3166 codes of the respective territories/subdivisions to the image. This can be useful when wanting to render a flag alongside content concerning regions without Unicode supporting them.
 
-The `.png` version of the provided Twemoji are 72×72 px, and for all other emoji 300×300 px.
+The `.png` version of the provided Twemoji are 72×72 px, and for all other emoji 360×360 px.
 
 
 
