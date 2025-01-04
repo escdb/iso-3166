@@ -1,5 +1,5 @@
 # Amendments
-Any amendments to the data in the `../data/` directory are to be put in this directory.
+Any amendments to the data in the `[repo_root]/regions/iso/` directory are to be put in this directory.
 
 
 ## General file format
@@ -41,5 +41,5 @@ Where `3166-x` is any of (`3166-1`, `3166-2`, or `3166-3`, i.e. the standard bei
 
 ## Resources
 - [Unicode CLDR: Country/Region (Territory) Names](https://cldr.unicode.org/translation/displaynames/countryregion-territory-names): Contains a few examples of "sensitive" names, or territories that may have an alternative name.
-- [Wikipedia page on Regional indicator symbols](https://en.wikipedia.org/wiki/Regional_indicator_symbol): Used to ensure that all Unicode flag emoji have their alpha_2 code reserved.
+- [Wikipedia page on Regional indicator symbols](https://en.wikipedia.org/wiki/Regional_indicator_symbol): Used to ensure that all Unicode flag emoji have their `alpha_2` code reserved.
 - [Unicode emoji sequences](https://unicode.org/Public/emoji/latest/emoji-sequences.txt): A more official reference for Unicode emoji.
