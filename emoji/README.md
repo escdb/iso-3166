@@ -25,4 +25,4 @@ This means that the file is first grouped by the ISO standard, and then each cod
 
 ## Licensing
 All graphics (PNG/SVG) in the subdirectories of this directory fall under the CC-BY-4.0 license (as found in `LICENSE-EMOJI`).
-The `twemoji` directories fall under the CC-BY-4.0 license of [`@jdecked`'s Twemoji repository](https://github.com/jdecked/twemoji). 
+The `twemoji` directories fall under the CC-BY-4.0 license of [`@jdecked`'s Twemoji repository](https://github.com/jdecked/twemoji).
