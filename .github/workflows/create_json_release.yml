@@ -24,9 +24,9 @@ jobs:
       - name: Check for JSON changes since last tag
         id: check_changes
         run: |
-          echo "Checking for changes in /data/ or /amendments/..."
+          echo "Checking for changes in /regions/iso or /regions/extra..."
           changes=$(git diff --name-only ${{ steps.previoustag.outputs.tag }}...HEAD)
-          if [[ "$changes" =~ (data/.+\.json|amendments/.+\.json) ]]; then
+          if [[ "$changes" =~ (regions/iso/.+\.json|regions/extra/.+\.json) ]]; then
             echo "Relevant JSON changes found."
           else
             echo "No relevant JSON changes since the last tag."

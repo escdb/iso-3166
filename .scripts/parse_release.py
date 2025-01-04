@@ -21,8 +21,8 @@ class IsoParser:
     def __init__(self, repo_root: str | None = None):
         self.repo_root = self.set_repo_root(repo_root)
         # Only used in __init__.
-        _data_dir = os.path.join(self.repo_root, "data")
-        _amendment_dir = os.path.join(self.repo_root, "amendments")
+        _data_dir = os.path.join(self.repo_root, "regions", "iso")
+        _amendment_dir = os.path.join(self.repo_root, "regions", "extra")
         # Set class constants.
         self.OFFICIAL_DATA_PATHS: dict[STANDARD, str] = {
             "3166-1": os.path.join(_data_dir, "iso_3166-1.json"),
