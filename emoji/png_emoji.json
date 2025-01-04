@@ -250,6 +250,7 @@
     "VI": "./png/twemoji/1f1fb-1f1ee.png",
     "VN": "./png/twemoji/1f1fb-1f1f3.png",
     "VU": "./png/twemoji/1f1fb-1f1fa.png",
+    "WA": "./png/twemoji/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.png",
     "WF": "./png/twemoji/1f1fc-1f1eb.png",
     "WS": "./png/twemoji/1f1fc-1f1f8.png",
     "XK": "./png/twemoji/1f1fd-1f1f0.png",
@@ -261,6 +262,11 @@
     "XW": "./png/extra/esc_bonus_flags/flag_xw.png"
   },
   "3166-2": {
+    "GB-ENG": "./png/twemoji/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.png",
+    "GB-SCT": "./png/twemoji/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.png",
+    "GB-WLS": "./png/twemoji/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.png",
+    "NL-AW": "./png/twemoji/1f1e6-1f1fc.png",
+    "NL-CW": "./png/twemoji/1f1e8-1f1fc.png",
     "NL-DR": "./png/extra/3166-2-NL/flag_nl_dr.png",
     "NL-FL": "./png/extra/3166-2-NL/flag_nl_fl.png",
     "NL-FR": "./png/extra/3166-2-NL/flag_nl_fr.png",
@@ -270,6 +276,7 @@
     "NL-NB": "./png/extra/3166-2-NL/flag_nl_nb.png",
     "NL-NH": "./png/extra/3166-2-NL/flag_nl_nh.png",
     "NL-OV": "./png/extra/3166-2-NL/flag_nl_ov.png",
+    "NL-SX": "./png/twemoji/1f1f8-1f1fd.png",
     "NL-UT": "./png/extra/3166-2-NL/flag_nl_ut.png",
     "NL-XR": "./png/extra/3166-2-NL/flag_nl_xr.png",
     "NL-XW": "./png/extra/3166-2-NL/flag_nl_xw.png",

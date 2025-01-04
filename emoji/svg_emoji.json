@@ -250,6 +250,7 @@
     "VI": "./svg/twemoji/1f1fb-1f1ee.svg",
     "VN": "./svg/twemoji/1f1fb-1f1f3.svg",
     "VU": "./svg/twemoji/1f1fb-1f1fa.svg",
+    "WA": "./svg/twemoji/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.svg",
     "WF": "./svg/twemoji/1f1fc-1f1eb.svg",
     "WS": "./svg/twemoji/1f1fc-1f1f8.svg",
     "XK": "./svg/twemoji/1f1fd-1f1f0.svg",
@@ -261,6 +262,11 @@
     "XW": "./svg/extra/esc_bonus_flags/flag_xw.svg"
   },
   "3166-2": {
+    "GB-ENG": "./svg/twemoji/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.svg",
+    "GB-SCT": "./svg/twemoji/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.svg",
+    "GB-WLS": "./svg/twemoji/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.svg",
+    "NL-AW": "./svg/twemoji/1f1e6-1f1fc.svg",
+    "NL-CW": "./svg/twemoji/1f1e8-1f1fc.svg",
     "NL-DR": "./svg/extra/3166-2-NL/flag_nl_dr.svg",
     "NL-FL": "./svg/extra/3166-2-NL/flag_nl_fl.svg",
     "NL-FR": "./svg/extra/3166-2-NL/flag_nl_fr.svg",
@@ -270,6 +276,7 @@
     "NL-NB": "./svg/extra/3166-2-NL/flag_nl_nb.svg",
     "NL-NH": "./svg/extra/3166-2-NL/flag_nl_nh.svg",
     "NL-OV": "./svg/extra/3166-2-NL/flag_nl_ov.svg",
+    "NL-SX": "./svg/twemoji/1f1f8-1f1fd.svg",
     "NL-UT": "./svg/extra/3166-2-NL/flag_nl_ut.svg",
     "NL-XR": "./svg/extra/3166-2-NL/flag_nl_xr.svg",
     "NL-XW": "./svg/extra/3166-2-NL/flag_nl_xw.svg",
