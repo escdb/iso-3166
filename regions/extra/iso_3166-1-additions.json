@@ -5,7 +5,7 @@
       "alpha_3": "XWL",
       "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
       "name": "Wales",
-      "_comment": "Wales (GB-WLS) participated in Junior Eurovision in 2018 and 2019, and needed a two-letter code to be consistent with the other participants. This (user-assigned) alpha-2 code was introduced in 2018, but did not take into account the user-assignable space of ISO 3166. Since 'WA' is not an official ISO 3166 alpha-2 code, it should thus probably be moved to another code (Q_ or X_) at some point. XW would be the most logical choice, but that code is (at this moment) already in use. The alpha-3 code was made after the creation of this repository and does thus respect the user-assignable space.",
+      "_comment": "Wales (GB-WLS in ISO3166-2) participated in Junior Eurovision in 2018 and 2019, and needed a two-letter code to be consistent with the other participants. This (user-assigned) alpha-2 code was introduced in 2018, but did not take into account the user-assignable space of ISO 3166. Since 'WA' is not an official ISO 3166 alpha-2 code, it should thus probably be moved to another code (Q_ or X_) at some point. XW would be the most logical choice, but that code is (at this moment) already in use. The alpha-3 code was made after the creation of this repository and does thus respect the user-assignable space.",
       "in_esc": false,
       "in_jesc": true
     },
