@@ -41,6 +41,10 @@
       "in_esc": true,
       "in_jesc": true
     },
+    "CA": {
+      "in_esc": true,
+      "in_jesc": false
+    },
     "CD": {
       "common_name": "DR Congo",
       "_comment": "Common name: Abbreviated form often used to refer to the country."
