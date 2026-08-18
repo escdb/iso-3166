@@ -113,7 +113,8 @@ class IsoParser:
 
 if __name__ == "__main__":
     APPEND_AMENDMENTS = True  # Whether to append the amendments.
-    OUTPUT_PATH = "../iso_3166_data.json"
+
+    OUTPUT_PATH = Path(__file__).resolve().parents[1] / "iso_3166_data.json"
 
     print("Create IsoParser...")
     parser = IsoParser()
