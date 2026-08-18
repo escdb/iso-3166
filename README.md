@@ -10,12 +10,19 @@ This repository has several purposes:
 
 ## About the data
 ### ISO data
-The data is derived from [the Debian repository for ISO codes](https://salsa.debian.org/iso-codes-team/iso-codes), which in turn is based on several ISO standards including ISO 3166.
+The source data for ISO-3166 is derived from [the Debian repository for ISO codes](https://salsa.debian.org/iso-codes-team/iso-codes), which in turn is based on several ISO standards including ISO 3166.
 
-To make it easy to update the repository with the "upstream" data (i.e. the Debian repository), any files in the `/regions/iso/` repository should not be modified by any user. For consistency, updates to those files are allowed **only** when the Debian repository updates those files.
+This data is then "enriched" through amendments for purposes specific to `ESCDB`. A script then automatically merges the source data with the amendments into a *Release* consisting of a single, unified JSON file.
 
-Instead, any necessary changes to the ISO 3166 standard in the scope of this project should be made in a separate `/regions/extra/` directory.
+#### Data maintenance
+> [!WARNING]
+> To make it easy to update the repository with the "upstream" data (i.e. the Debian repository), any files in the `/regions/iso/` repository **must not** be customised by any user. For consistency, updates to those files are allowed **only** when the Debian repository updates those files.
+
+Instead, any necessary changes to the ISO 3166 standard in the scope of this project (mostly amendments) should be made in a separate `/regions/extra/` directory.
 This repository nevertheless strives to be as consistent with international standards as possible, and only deviates when this is necessary for any features (such as support for specific contests which can otherwise not be supported).
+
+An example of an edit that is *not* an amendment (but rather an override) is the numeric code of `YUCS` in `3166-3`. Its comment states that the numeric code for YUCS was `890` initially, but eventually got changed to `891`. Since `891` is also the code for CSXX, and both are relevant to the project, this causes a number conflict. 
+This conflict is resolved by explicitly changing "back" the numeric code of YUCS to `890` through the `iso_3166-3-edits.json` file.
 
 ### Flag emoji
 The `/emoji/` directory contains all emoji for ISO-3166 territories inside the CLDR, as well as some custom emoji representing other ISO-3166 codes specifically made for this repository. All emoji are stored in both the `.png` and `.svg` file formats, each with their dedicated directory (`/emoji/png/` and `/emoji/svg/`).
@@ -36,11 +43,11 @@ Finally, the `misc` file contains some helper files that do not necessarily cont
 
 
 ## Contributions
-Since the accuracy and consistency of the data in this repository is of utmost importance for the proper functioning of other aspects of the project, any Pull Requests will be thoroughly reviewed. It is recommended to textually discuss any proposed changes to the admendments (or new amendments) with the project owners before creating pull requests, as the chance of them being accepted otherwise is relatively low.
+Since the accuracy and consistency of the data in this repository is of utmost importance for the proper functioning of other aspects of the project, any Pull Requests will be thoroughly reviewed. It is recommended to textually discuss any proposed changes to the admendments (or new amendments) with the project owners before creating pull requests, as the chance of them being accepted otherwise is low.
 
 
-## Licensing
-To stay consistent with the Debian repository, this repository shares the same license (GNU LGPLv2.1). 
-Some specific files, notably emoji graphics, may use additional or different licenses (such as CC-BY-4.0).
+## Licencing
+To stay consistent with the Debian repository, this repository shares the same licence (GNU LGPLv2.1). 
+Some specific files, notably emoji graphics, may use additional or different licences (such as CC-BY-4.0).
 
-If different licenses apply, these will be mentioned in the specific directory.
+If different licences apply, these will be mentioned in the specific directory.
