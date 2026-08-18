@@ -4,9 +4,9 @@
 
 # Standard library.
 import json
-import os
 import subprocess
 from collections import defaultdict
+from pathlib import Path
 from typing import Literal
 
 
@@ -16,46 +16,48 @@ AMEND_TYPE = Literal["add", "edit", "reserve"]
 
 
 class IsoParser:
-    """Very descriptive description"""
+    """Parser for the iso-3166_data.json file (release)"""
 
     def __init__(self, repo_root: str | None = None):
-        self.repo_root = self.set_repo_root(repo_root)
+
+        self.repo_root: Path = self.set_repo_root(repo_root)
         # Only used in __init__.
-        _data_dir = os.path.join(self.repo_root, "regions", "iso")
-        _amendment_dir = os.path.join(self.repo_root, "regions", "extra")
+        _data_dir =  self.repo_root / "regions" / "iso"
+        _amendment_dir = self.repo_root / "regions" / "extra"
         # Set class constants.
-        self.OFFICIAL_DATA_PATHS: dict[STANDARD, str] = {
-            "3166-1": os.path.join(_data_dir, "iso_3166-1.json"),
-            "3166-2": os.path.join(_data_dir, "iso_3166-2.json"),
-            "3166-3": os.path.join(_data_dir, "iso_3166-3.json"),
+        self.OFFICIAL_DATA_PATHS: dict[STANDARD, Path] = {
+            "3166-1": _data_dir / "iso_3166-1.json",
+            "3166-2": _data_dir / "iso_3166-2.json",
+            "3166-3": _data_dir / "iso_3166-3.json",
         }
         # Amendment files.
-        self.AMENDMENT_FILES: dict[STANDARD, dict[AMEND_TYPE, str]] = {
+        self.AMENDMENT_FILES: dict[STANDARD, dict[AMEND_TYPE, Path]] = {
             "3166-1": {
-                "add": os.path.join(_amendment_dir, "iso_3166-1-additions.json"),
-                "edit": os.path.join(_amendment_dir, "iso_3166-1-edits.json"),
+                "add": _amendment_dir / "iso_3166-1-additions.json",
+                "edit": _amendment_dir / "iso_3166-1-edits.json",
             },
             "3166-2": {
-                "add": os.path.join(_amendment_dir, "iso_3166-2-additions.json"),
-                "edit": os.path.join(_amendment_dir, "iso_3166-2-edits.json"),
+                "add": _amendment_dir / "iso_3166-2-additions.json",
+                "edit": _amendment_dir / "iso_3166-2-edits.json",
             },
             "3166-3": {
-                "add": os.path.join(_amendment_dir, "iso_3166-3-additions.json"),
-                "edit": os.path.join(_amendment_dir, "iso_3166-3-edits.json"),
+                "add": _amendment_dir / "iso_3166-3-additions.json",
+                "edit": _amendment_dir / "iso_3166-3-edits.json",
             },
         }
 
     @staticmethod
-    def set_repo_root(custom: str | None = None) -> str:
+    def set_repo_root(custom: str | None = None) -> Path:
         """Return the root directory of the git repository"""
         if custom:
-            return custom
+            return Path(custom)
         else:
             try:
                 root = subprocess.check_output(
                     ['git', 'rev-parse', '--show-toplevel'], stderr=subprocess.STDOUT
                 )
-                return root.decode('utf-8').strip()  # Decode and strip any extra whitespace.
+                # Decode and strip any extra whitespace.
+                return Path(root.decode('utf-8').strip())
             except subprocess.CalledProcessError as e:
                 print(f"Error getting repo root: {e.output.decode('utf-8')}")
                 raise
@@ -89,7 +91,7 @@ class IsoParser:
                         iso_dict[standard] = temp_dict
                     case "3166-3":
                         iso_dict[standard] = {i["alpha_4"]: i for i in json.load(file)[standard]}
-        if append_amendments:
+        if append_amendments:  # May thus also override stuff from the "main" ISO file.
             for standard, amend_dict in self.AMENDMENT_FILES.items():
                 for amend_type, fp in amend_dict.items():
                     with open(fp, "r") as file:
@@ -111,9 +113,7 @@ class IsoParser:
 
 if __name__ == "__main__":
     APPEND_AMENDMENTS = True  # Whether to append the amendments.
-    OUTPUT_PATH = "iso_3166_data.json"
-    # CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-    # REPO_ROOT = os.path.join(CURRENT_DIR, "..")
+    OUTPUT_PATH = "../iso_3166_data.json"
 
     print("Create IsoParser...")
     parser = IsoParser()

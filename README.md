@@ -14,8 +14,12 @@ The data is derived from [the Debian repository for ISO codes](https://salsa.deb
 
 To make it easy to update the repository with the "upstream" data (i.e. the Debian repository), any files in the `/regions/iso/` repository should not be modified by any user. For consistency, updates to those files are allowed **only** when the Debian repository updates those files.
 
-Instead, any necessary changes to the ISO 3166 standard in the scope of this project should be made in a separate `/regions/extra/` directory.
+Instead, any necessary changes to the ISO 3166 standard in the scope of this project (mostly amendments) should be made in a separate `/regions/extra/` directory.
 This repository nevertheless strives to be as consistent with international standards as possible, and only deviates when this is necessary for any features (such as support for specific contests which can otherwise not be supported).
+
+> [!NOTE]
+> An example of an edit that is *not* an amendmen (but rather an override) is the numeric code of `YUCS` in `3166-3`. Its comment states that the numeric code for YUCS was `890` initially, but eventually got changed to `891`. Since `891` is also the code for CSXX, and both are relevant to the project, this causes a number conflict. 
+This conflict is resolved by explicitly changing "back" the numeric code of YUCS to `890` through the `iso_3166-3-edits.json` file.
 
 ### Flag emoji
 The `/emoji/` directory contains all emoji for ISO-3166 territories inside the CLDR, as well as some custom emoji representing other ISO-3166 codes specifically made for this repository. All emoji are stored in both the `.png` and `.svg` file formats, each with their dedicated directory (`/emoji/png/` and `/emoji/svg/`).

@@ -8,7 +8,9 @@
     "YUCS": {
       "esc_name": "Yugoslavia",
       "in_esc": true,
-      "in_jesc": false
+      "in_jesc": false,
+      "numeric": "891",
+      "_comment": "numeric code changed to 891 on 1992-04-27 following the establishment of the FRY"
     }
   }
 }
