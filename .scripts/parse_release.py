@@ -9,7 +9,6 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Literal
 
-
 # Types.
 STANDARD = Literal["3166-1", "3166-2", "3166-3"]
 AMEND_TYPE = Literal["add", "edit", "reserve"]
@@ -22,7 +21,7 @@ class IsoParser:
 
         self.repo_root: Path = self.set_repo_root(repo_root)
         # Only used in __init__.
-        _data_dir =  self.repo_root / "regions" / "iso"
+        _data_dir = self.repo_root / "regions" / "iso"
         _amendment_dir = self.repo_root / "regions" / "extra"
         # Set class constants.
         self.OFFICIAL_DATA_PATHS: dict[STANDARD, Path] = {
@@ -54,10 +53,10 @@ class IsoParser:
         else:
             try:
                 root = subprocess.check_output(
-                    ['git', 'rev-parse', '--show-toplevel'], stderr=subprocess.STDOUT
+                    ["git", "rev-parse", "--show-toplevel"], stderr=subprocess.STDOUT
                 )
                 # Decode and strip any extra whitespace.
-                return Path(root.decode('utf-8').strip())
+                return Path(root.decode("utf-8").strip())
             except subprocess.CalledProcessError as e:
                 print(f"Error getting repo root: {e.output.decode('utf-8')}")
                 raise

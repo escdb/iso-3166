@@ -40,8 +40,10 @@ def get_filename_mapping():
                 result_dict[xx] = str(os.path.join(OUTPUT_DIR_PREFIX, f_name))
     return result_dict
 
+
 if __name__ == "__main__":
     import json
+
     res_dict = get_filename_mapping()
     print("Ok")
     # There are emoji in the .json file, so ensure_ascii should be False.
