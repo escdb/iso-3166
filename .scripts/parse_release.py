@@ -82,32 +82,58 @@ class IsoParser:
                     case "3166-1":
                         iso_dict[standard] = {i["alpha_2"]: i for i in json.load(file)[standard]}
                     case "3166-2":
-                        # Dict comprehension not possible because of default dict.
+                        # Dict comprehension not possible because of `defaultdict`.
                         temp_iso = json.load(file)
                         temp_dict = defaultdict(dict)
                         for i in temp_iso[standard]:
                             code = i["code"]
-                            temp_dict[code[:2]][code] = i
+                            belongs_to = code[:2]
+                            temp_dict[belongs_to][code] = i
                         iso_dict[standard] = temp_dict
                     case "3166-3":
                         iso_dict[standard] = {i["alpha_4"]: i for i in json.load(file)[standard]}
+                    case _:
+                        raise ValueError(f"Unexpected standard: {standard}")
         if append_amendments:  # May thus also override stuff from the "main" ISO file.
             for standard, amend_dict in self.AMENDMENT_FILES.items():
                 for amend_type, fp in amend_dict.items():
                     with open(fp, "r") as file:
-                        i_dict = json.load(file)
-                        match amend_type:
-                            case "add":
-                                for k, v in i_dict[standard].items():
-                                    iso_dict[standard][k] = v
-                            case "edit":
-                                # e.g. "GB": {"alt_alpha_2": "UK"}
-                                for outer_k, _outer_v in i_dict[standard].items():
-                                    # e.g. "alt_alpha_2", "UK".
-                                    for k, v in _outer_v.items():
-                                        iso_dict[standard][outer_k][k] = v
-                            case "reserve":
-                                pass
+                        # Topmost object of each file is the standard itself.
+                        i_dict: dict = json.load(file)[standard]
+                        to_modify = iso_dict[standard]
+                        match standard:
+                            case "3166-1" | "3166-3":
+                                match amend_type:
+                                    case "add":
+                                        for k, v in i_dict.items():
+                                            to_modify[k] = v
+                                    case "edit":
+                                        # e.g. "GB": {"alt_alpha_2": "UK"}
+                                        for outer_k, _outer_v in i_dict.items():
+                                            # e.g. "alt_alpha_2", "UK".
+                                            for k, v in _outer_v.items():
+                                                to_modify[outer_k][k] = v
+                                    case "reserve":
+                                        pass
+                                    case _:
+                                        raise ValueError(f"Unexpected amend type: {amend_type}")
+                            case "3166-2":  # Has extra nest level compared to others.
+                                for code, c_dict in i_dict.items():
+                                    belongs_to = code[:2]
+                                    match amend_type:
+                                        case "add":
+                                            # Note: defaultdict, so `belongs_to` may create new key.
+                                            to_modify[belongs_to][code] = c_dict
+                                            pass
+                                        case "edit":
+                                            for k, v in c_dict:
+                                                to_modify[belongs_to][code][k] = v
+                                        case "reserve":
+                                            pass
+                                        case _:
+                                            raise ValueError(f"Unexpected amend type: {amend_type}")
+                            case _:
+                                raise ValueError(f"Unexpected standard: {standard}")
         return iso_dict
 
 
