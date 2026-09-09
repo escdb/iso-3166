@@ -5,6 +5,7 @@ on:
       - main  # Triggered whenever something is pushed on main (force or no force)
     paths:
       - 'regions/**/*.json'
+      - '.scripts/*.py'
 
 permissions:
   contents: write
